@@ -465,10 +465,12 @@ body{
 
 /*               LALIT BHATTA CSS                             */
 #ourcourse h4{
-    background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+    background: linear-gradient(45deg, blue, red, rgb(221, 221, 32));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: transparent;
     text-decoration: underline;
+    font-size: 25px;
+    margin-bottom: 15px;
 }
 #second{
     display: flex;
@@ -481,6 +483,7 @@ body{
     gap: 2em;
 }
 #container {
+    margin-top: 40px;
     padding: 0 18vw;
 }
 
@@ -523,6 +526,9 @@ body{
         flex-direction: column;
         align-items: center;
         padding: 0 5vw;
+    }
+    #container{
+        margin-top: 40px;
     }
 }
 
