@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        body{
+            overflow: hidden;
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(50deg, rgb(20, 17, 198),beige,rgb(11, 0, 128),whitesmoke);
+            display: grid;
+            place-items: center;
+            
+        }
+        h2{
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            width: 100%;
+            background-color: aquamarine;
+        }
+        h2:hover{
+            background-color: rgb(59, 182, 182);
+            color: black;
+        }
+
+        .calculator{
+            border: 5px solid rgb(128, 128, 128);
+            width: fit-content;
+            overflow: hidden;
+            border-top: none;
+        }
+        #userInput{
+            width: 97%;
+            padding: 40px 5px;
+            text-align: right;
+            direction: ltr;
+            outline: none;
+            border: none;
+            background: whitesmoke;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .btn{
+            width: 24%;
+            height: 45px;
+            border-radius: 1px;
+            border: none;
+            outline: none;
+            margin-top: 3px;
+            background: rgb(210, 205, 217);
+        }
+        .btnEql{
+            width: 99.5%;
+            height: 45px;
+            border-radius: 1px;
+            border: none;
+            outline: none;
+            margin-top: 3px;
+            background: whitesmoke;
+        }
+        .btn:hover {
+            background-color: aquamarine;
+        }
+        @media(width >400px)
+        {
+            .container{
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(50deg, rgb(20, 17, 198),beige,rgb(11, 0, 128),whitesmoke);
+            display: grid;
+            place-items: center;
+        }
+        .calculator{
+            /* display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(5,1fr); */
+            border: 1px solid grey;
+            width: fit-content;
+            overflow: hidden;
+        }
+        .btn{
+            width: 23.5%;
+            height: 45px;
+            border-radius: 1px;
+            border: none;
+            outline: none;
+            margin-top: 3px;
+            background: rgb(210, 205, 217);
+        }
+        .btnEql{
+            width: 99%;
+            height: 45px;
+            border-radius: 1px;
+            border: none;
+            outline: none;
+            margin-top: 3px;
+            background: whitesmoke;
+        }
+        
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="calculator">
+            <h2>Calculator</h2>
+            <input type="text" id="userInput" placeholder="0">
+            <br>
+            <button class="btn" onclick="press(1)">1</button>
+            <button class="btn" onclick="press(2)">2</button>
+            <button class="btn" onclick="press(3)">3</button>
+            <button class="btn" onclick="press('+')">+</button>
+            <br>
+            <button class="btn" onclick="press(4)">4</button>
+            <button class="btn" onclick="press(5)">5</button>
+            <button class="btn" onclick="press(6)">6</button>
+            <button class="btn" onclick="press('/')">/</button>
+            <br>
+            <button class="btn" onclick="press(7)">7</button>
+            <button class="btn" onclick="press(8)">8</button>
+            <button class="btn" onclick="press(9)">9</button>
+            <button class="btn" onclick="press('-')">-</button>
+            <br>
+            <button class="btn" onclick="press('*')">*</button>
+            <button class="btn" onclick="press(0)">0</button>
+            <button class="btn" onclick="press('.')">.</button>
+            <button class="btn" onclick="erase()">C</button>
+            <br>
+            <button class="btn btnEql" onclick="equal('=')">=</button>
+        </div>
+    </div>
+    <script>
+        const userInput= document.getElementById('userInput');
+        var expression = '';
+        function press(num)
+        {
+            expression += num;
+            userInput.value = expression
+        }
+        function equal()
+        {
+            userInput.value = eval(expression);
+            expression ='';
+        }
+        function erase()
+        {
+            expression = '';
+            userInput.value= expression;
+        }
+    </script>
+</body>
+</html>

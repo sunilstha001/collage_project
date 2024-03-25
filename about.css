@@ -1,0 +1,106 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+.gradient{
+    background: linear-gradient(45deg, blue, red, rgb(221, 221, 32));
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-size: 25px;
+}
+span{
+    /* display: block; */
+    font-size: 1em;
+    font-weight: 900;
+}
+.aboutUs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    gap: 1em;
+    padding: 0 18vh;
+    height: 50vh;
+}
+.card{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: .5em;
+    color: white;
+   
+}
+.card>div{
+    background-color: rgb(102, 8, 234);
+    border-radius: 10px;
+}
+.card1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 1fr;
+    line-height: 2.5em;
+    padding: 20% 0% 0 8%;
+}
+.card1>button{
+    background-color: rgb(246, 246, 243);
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+}
+.card3,
+.card2{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    padding-left: 40%;
+    padding-top: 20%;
+    word-spacing: 1rem;
+    font-weight: bold;
+}
+.text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 2.5em;
+}
+.text>h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    margin-top: 20px;
+}
+@media(width<600px){
+    body{
+        overflow-x: hidden;
+    }
+ .aboutUs{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2vh 2vh;
+    height: fit-content;
+}
+.card{
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    grid-template-rows:1fr;
+    line-height: 2.5em;
+    margin: 10% 0% 0 0%;
+}
+.card2,.card3{
+    word-spacing: .5rem;
+}
+}
+@media(width>601px) and (width<1200px){
+    body{
+        overflow-x: hidden;
+    }
+    .aboutUs{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 30px;
+        gap: 1em;
+        padding: 0 5vh;
+        max-height: 55vh;
+        height: 50vh;
+    }
+    
+}

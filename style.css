@@ -611,4 +611,400 @@ a:hover
     margin-top: 20px;
 }
 
+/*          Samundra About US section  CSSSSS         */
+.gradient{
+    background: linear-gradient(45deg, blue, red, rgb(221, 221, 32));
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-size: 25px;
+}
+span{
+    /* display: block; */
+    font-size: 1em;
+    font-weight: 900;
+}
+.aboutUs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 15vh;
+    gap: 1em;
+    padding: 0 18vw;
+    height: 50vh;
+}
+.card{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: .5em;
+    color: white;
+   
+}
+.card>div{
+    background-color: rgb(102, 8, 234);
+    border-radius: 10px;
+}
+.card1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 1fr;
+    line-height: 2.5em;
+    padding: 20% 0% 0 4%;
+}
+.card1>button{
+    background-color: rgb(246, 246, 243);
+    width: 150px;
+    margin: auto;
+    border-radius: 10px;
+    font-size: large;
+    cursor: pointer;
+    padding: 10px 0;
+}
+.card3,
+.card2{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    padding-left: 40%;
+    padding-top: 20%;
+    word-spacing: 1rem;
+    font-weight: bold;
+}
+.text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.5em;
+}
+.text>h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    margin-top: 20px;
+}
 
+@media(width<900px){
+ .aboutUs{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 5vw;
+    height: fit-content;
+}
+.card{
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    grid-template-rows:1fr;
+    line-height: 2.5em;
+    margin: 10% 0% 0 0%;
+}
+.card2,.card3{
+    word-spacing: .5rem;
+}
+}
+@media (max-width:1400px) {
+    .aboutUs{
+        padding: 0 5vw;
+    }  
+}
+@media(width>901px) and (width<1200px){
+    .aboutUs{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 10vh;
+        gap: 1em;
+        padding: 0 5vh;
+        max-height: 55vh;
+        height: 50vh;
+    }
+    
+}
+
+
+
+/*                            Samundra  Video cSs                       */
+.videoandtext{
+    margin-top: 15vh;
+}
+video{
+    object-fit: cover;
+    height: 60vh;
+}
+.videoandtext .box{
+    display: grid;
+    grid-auto-flow: column;
+    /* justify-content: space-around; */
+    grid-template-columns: repeat(4,1fr);
+    gap: 5%;
+    padding: 0 18vh;
+    
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+    position: relative;
+    gap: .5em;
+    text-align: center;
+    height: 250px;
+    padding: 1em;
+    background-color: whitesmoke;
+    transform: translateY(-30%);
+    border-radius: 10px;
+}
+
+.iconimage{
+    border-radius: 50%;
+     height: 70px;
+    width: 70px;  
+    display: grid;
+    place-items: center;
+   position: relative;
+   transform: translate(50%,-70%);
+}
+.icon1{
+    background-color: yellow
+}
+.icon2{
+    background-color: red;
+}
+.icon3{
+    background-color: green
+}
+.icon4{
+    background-color: blue;
+}
+@media (width<900px){
+    .videoandtext .box{
+        display: grid;
+        grid-auto-flow: column;
+        /* justify-content: space-around; */
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 5%;
+        padding: 0 6vh;
+        
+    }
+
+}
+@media(width<320px){
+    .videoandtext .box{
+        padding: 0;
+    }
+}
+
+
+/* Instructor COde */
+.instructor{
+    margin-top: 60px;
+    width: 100%;
+}
+.instructor-section{
+    display: flex;
+    padding: 50px 18vw;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: rgb(190, 190, 223);
+}
+.instructor-section img{
+    height: 500px;
+}
+.instructor-section .buttom p{
+    font-size: 1vw;
+}
+.instructor-section .right .top{
+    margin-top: 18px;
+}
+
+.instructor-section .buttom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.instructor-section .right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.instructor-section .right button{
+    margin-top: 10px;
+    padding: 10px;
+    width: 150px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: rgb(63, 63, 202);
+    color: white;
+
+}
+
+@media (max-width: 1500px){
+    .instructor-section{
+        padding: 0 5vw;
+    }
+    .instructor-section .buttom p{
+        font-size: 1.4vw;
+    }
+}
+@media (max-width: 1000px){
+    .instructor-section img{
+        height: 400px;
+    }
+    .instructor-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 15vw;
+        gap: 0px;
+    }
+    .instructor-section .buttom p{
+        font-size: 18px;
+    }
+    .instructor-section .right button{
+        margin: auto;
+        margin: 20px auto;
+    }
+}
+
+
+/* Paymenet Gateway */
+.subscription{
+    width: 100%;
+    height: 100vh;
+}
+.subscription-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 0 18vw;
+}
+.subscription-box .top{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    /* height: 200px; */
+}
+.subscription-box .top .left h1{
+    margin-top: 20px;
+}
+.subscription-box .top .right img{
+    height: 80px;
+}
+.subscription-box .mid h1{
+    margin: auto;
+}
+.subscription-box .mid{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: auto;
+}
+.subscription-box .mid .tow{
+    display: flex;
+    gap: 15px;
+    margin: auto;
+}
+.subscription-box .mid p{
+    font-size: 18px;
+}
+.subscription-box .mid .tow button{
+    padding: 14px 18px;
+    background-color: rgb(63, 63, 202);
+    color: white;
+    font-family: sans-serif;
+    border-radius: 10px;
+    font-weight: 550;
+    border: none;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+}
+.subscription-box .mid .tow #anually{
+    background-color: rgb(8, 199, 8);
+}
+.subscription-box .buttom{
+    display: flex;
+    gap: 50px;
+    margin: auto;
+    cursor: pointer;
+}
+.subscription-box .buttom .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    height: 450px;
+    width: 280px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease;
+}
+.subscription-box .buttom .box .free{
+    color: rgb(36, 108, 185);
+    font-size: 20px;
+}
+.subscription-box .buttom .box:hover {
+    transform: scale(1.05); /* Scaling up the box by 5% on hover */
+}
+.subscription-box .buttom p{
+    font-size: 18px;
+}
+.subscription-box .buttom .child-box{
+    line-height: 30px;
+
+}
+.subscription-box .buttom .box  button{
+    padding: 14px 18px;
+    background-color: rgb(8, 199, 8);
+    color: white;
+    font-family: sans-serif;
+    border-radius: 10px;
+    font-weight: 550;
+    border: none;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+}
+
+
+
+
+@media (max-width: 1400px){
+    .subscription-box{
+        padding: 0 5vw;
+    }
+}
+@media (max-width: 1110px){
+    .subscription-box .top .left h1{
+        font-size: 22px;
+    }
+    .subscription-box .buttom{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin: auto;
+        cursor: pointer;
+    }
+    .subscription-box .buttom .box{
+        width: 300px;
+    }
+    .subscription-box{
+        gap: 50px;
+    }
+    .subscription-box .top .right img{
+        height: 60px;
+    }
+}
+@media (max-width: 800px){
+    .subscription-box .top .left h1{
+        font-size: 18px;
+    }
+    .subscription-box .top .right img{
+        height: 60px;
+    }
+}
