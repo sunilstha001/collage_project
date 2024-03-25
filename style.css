@@ -849,7 +849,7 @@ video{
 }
 @media (max-width: 1000px){
     .instructor-section img{
-        height: 400px;
+        height: 300px;
     }
     .instructor-section{
         display: flex;
@@ -860,7 +860,7 @@ video{
         gap: 0px;
     }
     .instructor-section .buttom p{
-        font-size: 18px;
+        font-size: 15px;
     }
     .instructor-section .right button{
         margin: auto;
