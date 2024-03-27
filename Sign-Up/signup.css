@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: sans-serif;
+
+}
+body{
+    background-color: #dadada;
+    color: #F5F5DC;
+    
+}
+.sign-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box{
+    height: 510px;
+    width: 400px;
+    background-color: rgb(112, 112, 240);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+}
+.box .top{
+    display: flex;
+    justify-content: space-between;
+}
+.box .top h1{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.box .top img{
+    height: 70px;
+     
+}
+.sign-in .box .mid form{
+    display: flex;
+    flex-direction: column;
+}
+.sign-in .box .top{
+    text-align: center;
+}
+form input.three{
+    margin: 8px 0;
+    height: 40px;
+    padding-left:15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+form input.three::placeholder {
+    font-size: 15px; /* Adjust the font size as needed */
+}
+form label {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 15px; /* Adjust the margin as needed */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form input[type="checkbox"] {
+    margin-right:10px; /* Adjust the margin between checkbox and text */
+    transform: scale(1.5);
+}
+.sign-in .mid #social-media {
+    margin-bottom: 5px;
+    text-align: center;
+}
+.sign-in .mid .social-media-icons {
+    text-align: center;
+}
+
+.sign-in .mid .social-media-icons i {
+    cursor: pointer;
+    font-size: 35px;
+    color: black;
+    margin: 0 5px; /* Add some margin between icons */
+}
+.sign-in .buttom {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.sign-in .buttom button{
+    margin: auto;
+    cursor: pointer;
+    padding: 10px 80px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transition-delay: 0.2s; /* Add a delay of 0.2 seconds */
+}
+.sign-in .buttom button:hover{
+    background-color: black;
+    color: white;
+}
