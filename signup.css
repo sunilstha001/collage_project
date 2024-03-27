@@ -105,3 +105,11 @@ form input[type="checkbox"] {
     background-color: black;
     color: white;
 }
+@media (max-width: 900px) {
+    
+    .box{ 
+     margin: 0 30px;
+     width: 350px;
+    }
+ }
+ 

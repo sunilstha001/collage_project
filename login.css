@@ -115,3 +115,10 @@ form input[type="checkbox"] {
 .sign-in .buttom #sign-up:hover a {
     color: white;
 }
+@media (max-width: 900px) {
+    
+   .box{ 
+    margin: 0 30px;
+    width: 350px;
+   }
+}
