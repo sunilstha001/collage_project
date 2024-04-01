@@ -568,7 +568,9 @@ body {
     padding: 0px 20px;
     margin-top: 0px;
 }
-
+#ourcourse h2{
+    text-align: center;
+}
 @media (max-width: 1400px) {
     #lalitcontainer {
         padding: 0 5vw;
@@ -666,7 +668,7 @@ a:hover {
 /*          Samundra About US section  CSSSSS         */
 .gradient {
     background: linear-gradient(45deg, blue, red, rgb(221, 221, 32));
-    background-clip: text;
+   -webkit-background-clip: text;
     color: transparent;
     font-weight: bold;
     font-size: 25px;
@@ -820,6 +822,7 @@ video {
     background-color: whitesmoke;
     transform: translateY(-30%);
     border-radius: 10px;
+    font-size: 22px
 }
 
 .iconimage {
@@ -860,6 +863,22 @@ video {
 
     }
 
+}
+@media(width<600px){
+    .box .data{
+        padding: 0 2%;
+        height: 150px;
+        /* margin: 5%; */
+        font-size: 18px;
+    }
+    .videoandtext .box {
+        display: grid;
+        grid-auto-flow: column;
+        /* justify-content: space-around; */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 3em;
+    }
 }
 
 @media(width<320px) {
