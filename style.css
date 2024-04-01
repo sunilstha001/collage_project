@@ -9,6 +9,7 @@
 
 body {
     background-color: whitesmoke;
+    scroll-behavior: smooth;
 }
 
 
@@ -94,6 +95,8 @@ body {
     border: none;
     cursor: pointer;
     border: none;
+    border: none;
+    outline: none;
 }
 
 .icon {
