@@ -225,6 +225,7 @@ body {
     border-radius: 25px;
     font-size: 18px;
     cursor: pointer;
+    outline: none;
 }
 
 .hero .buttom {
@@ -248,7 +249,9 @@ body {
         flex-direction: column;
         gap: 40px;
     }
-
+    .hero .top .left button {
+       font-size: 14px;
+    }
     .hero {
         gap: 20px;
     }
