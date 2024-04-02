@@ -218,7 +218,7 @@ body {
 }
 
 .hero .buttom button {
-    padding: 12px 30px;
+    padding: 12px 40px;
     border: none;
     background-color: #dadada;
     color: black;
@@ -503,6 +503,7 @@ body {
 
 /*               LALIT BHATTA CSS                             */
 #ourcourse h2 {
+    font-size: 25px;
     background: linear-gradient(45deg, blue, red, rgb(221, 221, 32));
     -webkit-background-clip: text;
     color: transparent;
@@ -723,7 +724,10 @@ span {
     font-size: large;
     cursor: pointer;
     padding: 10px 0;
+    border: none;
+    outline: none;
 }
+
 
 .card3,
 .card2 {
@@ -893,7 +897,7 @@ video {
 
 /* Instructor COde */
 .instructor {
-    margin-top: 60px;
+    margin-top: 30px;
     width: 100%;
 }
 
