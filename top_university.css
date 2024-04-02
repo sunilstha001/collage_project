@@ -92,3 +92,175 @@ body {
         grid-template-rows: auto; /* Set to auto to ensure each box occupies full width */
     }
 }
+
+
+
+.foot {
+    margin-top: 50px;
+    display: grid;
+    height: 70vh;
+    background-color: rgb(16, 4, 49);
+    color: whitesmoke;
+    place-items: center;
+
+}
+
+.foot img {
+    height:60px;
+/* background-color:  rgb(255, 254, 254);  */
+mix-blend-mode: hard-light;
+/* border-radius: 35% 35% 5% 5%; */
+   object-fit: contain;
+} 
+
+.foot a {
+    color: whitesmoke;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.foot a:hover {
+    font-weight: bolder;
+    color: rgb(171, 215, 39);
+}
+
+.foot ul {
+    list-style-type: none;
+}
+
+.quickInfo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    /* padding: 1em; */
+    padding: 0 18vh;
+}
+
+#insocour {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+#insocour h3 {
+    align-self: center;
+    padding: .5em;
+}
+
+.foot .box h3 {
+    margin-bottom: 2em;
+}
+
+.foot .box {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.foot .box li {
+    padding-bottom: 1em;
+}
+
+.foot .box button {
+    padding: 1em;
+    background-color: aquamarine;
+    cursor: pointer;
+    border-radius: 10px 20px;
+    outline: none;
+    width: 50%;
+}
+
+.foot .box button:hover {
+    transform: scale(1.02);
+    font-weight: bold;
+}
+
+.addr {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.addr>p {
+    align-self: center;
+}
+
+.tele {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.tele>p {
+    align-self: center;
+}
+
+.mail {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.mail>p {
+    align-self: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-self: end;
+    border-top: 1px solid green;
+    width: 100%;
+    padding: 1em;
+}
+
+.right i {
+    cursor: pointer;
+}
+
+@media(width<900px) {
+    .foot {
+        height: 100%;
+        place-items: center;
+        padding-top: 2em;
+
+    }
+
+    .quickInfo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+        padding: 0 8vh;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: auto;
+    }
+}
+
+@media(width<600px) {
+    .foot {
+        height: 100%;
+        padding: 0;
+
+    }
+
+    .quickInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 1em;
+
+    }
+
+    .quickInfo .box {
+        margin-bottom: 1em;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+}
