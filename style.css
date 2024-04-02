@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    transition: all 3s ease;
 
 }
 
@@ -543,6 +544,7 @@ body {
     border-radius: 5px;
 
 }
+
 
 .hell img {
     width: 90%;
