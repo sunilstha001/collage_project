@@ -7,7 +7,7 @@
 
 .main {
     width: 100%;
-    padding: 5vh 5vw; /* Adjust padding for smaller screens */
+    padding: 3vh 5vw; /* Adjust padding for smaller screens */
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 }
 
 .main .top_university {
-    margin-top: 10vh;
+    margin-top: 6vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust minmax values for responsive card widths */
     gap: 35px;
@@ -80,11 +80,15 @@ body {
 
 /* Media Query for Mobile Devices */
 @media only screen and (max-width: 480px) {
+    .hero h1{
+        font-size: 20px;
+    }
     .main {
-        padding: 0 3vw; /* Adjust padding for smaller screens */
+        padding: 0 5vw; /* Adjust padding for smaller screens */
     }
     
     .main .top_university {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust column width for smaller screens */
+        grid-template-columns: 1fr; /* Set to one fraction to force one box per row */
+        grid-template-rows: auto; /* Set to auto to ensure each box occupies full width */
     }
 }
