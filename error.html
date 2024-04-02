@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+
+        .noService {
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            place-items: center;
+            background-color: whitesmoke;
+        }
+
+        .noService .box {
+            padding: 1em 2em;
+            border-top: 1em  dashed red;
+            border-bottom: 1em dashed red;
+            text-transform: uppercase;
+            font-style: italic;
+
+        }
+
+        @media  (width<350px) {
+            .noService .box {
+                writing-mode: vertical-lr;
+                transform: rotate(180deg);
+                font-weight: bold;
+                padding: 2em ;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="noService">
+        <div class="box">
+            <h2>
+                sorry , the service is
+            </h2>
+            <h1>Temporarily</h1>
+            <h1>Not available</h1>
+        </div>
+    </div>
+</body>
+
+</html>
