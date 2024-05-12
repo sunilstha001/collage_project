@@ -8,6 +8,8 @@
     display: flex;
     padding: 0 18vh;
     gap: 1em;
+    font-size: 1.5em;
+    padding-bottom: 5em;
 }
 
 .titles {
@@ -69,7 +71,7 @@ img {
 #listOption2 .otherOptions2.collapsed2 {
     display: none;
 }
-.content{
+.content,.moreContent{
     display: grid;
     place-items: center;
 }
@@ -107,10 +109,10 @@ h2[title]:hover::after {
     z-index: 1;            
     white-space: nowrap;   
 }
-.moreContent{
+/* .moreContent{
     padding-top: 2em;
     padding-bottom: 2em;
-}
+} */
 .moreContent ul{
    list-style-type: none;
    padding-top: 1em;
