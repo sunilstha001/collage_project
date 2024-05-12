@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cSytle.css">
+
+</head>
+
+<body>
+    <section class="code">
+        <h2>C Program to Find Sum of Digits of a Number</h2>
+        <p>
+        <h3>Sum of Digits:</h3> The <b>sum of digits</b> of a number is the sum of all the digits present in the
+        number. For example, the sum of digits of the number 1234 is 1+2+3+4 = 10. </p>
+        <div class="prgDes">
+            <h2>Program Description</h2>
+            <p>Write a C Program to find the sum of digits of a given number.</p>
+        </div>
+        <div class="prgSoln">
+            <p>1. Take the integer to be checked as input.</p> <br>
+            <p>2. Initialize a variable to store the sum of digits.</p> <br>
+            <p>3. Use a while loop to extract each digit from the number and add it to the sum.</p> <br>
+            <p>4. Print the output and exit.</p>
+
+        </div>
+        <div class="sourceCode">
+            <p>Here is source code of the C program to find the sum of digits of a given number. The C program is
+                successfully compiled and run on a Linux system. The program output is also shown below.</p>
+            <pre><code class="language-c">
+                /*
+
+C Program to find the sum of digits of a number */
+#include &lt;stdio.h&gt;
+
+int main() { int n, sum = 0; printf("Enter a number: "); scanf("%d", &n);
+while (n != 0) {
+    sum += n % 10;
+    n /= 10;
+}
+
+printf("Sum of digits: %d", sum);
+
+return 0;
+} </code></pre>
+        </div>
+        <p class="Iferror">If you find any mistake above, kindly email to <a
+                href="mailto:poudel_samundra@outlook.com">poudel_samundra@outlook.com</a></p>
+    </section>
+
+</body>
+
+</html>

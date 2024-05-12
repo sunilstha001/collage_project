@@ -1,0 +1,64 @@
+Here's the markdown version of the code with proper padding:
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cSytle.css">
+
+</head>
+
+<body>
+    <section class="code">
+        <h2>Fibonacci Series Program in C</h2>
+        <p>
+        <h3>Fibonacci Series:</h3> The <b>Fibonacci series</b> is a sequence of numbers where the next number is found
+        by adding up the two numbers before it. The sequence starts with 0 and 1. For example, the Fibonacci series of
+        the first 10 numbers is: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34. </p>
+        <div class="prgDes">
+            <h2>Program Description</h2>
+            <p>Write a C Program to print the first n numbers of the Fibonacci series.</p>
+        </div>
+        <div class="prgSoln">
+            <p>1. Take the number of terms to be printed as input.</p> <br>
+            <p>2. Initialize the first two numbers of the series to 0 and 1.</p> <br>
+            <p>3. Use a for loop to print the first n numbers of the series.</p> <br>
+            <p>4. Inside the loop, print the current number and update the previous two numbers.</p>
+
+        </div>
+        <div class="sourceCode">
+            <p>Here is source code of the C program to print the first n numbers of the Fibonacci series. The C program
+                is successfully compiled and run on a Linux system. The program output is also shown below.</p>
+            <pre><code class="language-c">
+                *
+
+                C Program to print the first n numbers of the Fibonacci series */
+    #include &lt;stdio.h&gt;
+                
+    int main() { int n, first = 0, second = 1, next; printf("Enter the number of terms: "); scanf("%d", &n);
+    printf("First %d numbers of the Fibonacci series are:\n", n);
+
+    for (int i = 0; i &lt; n; i++) {
+    if (i <= 1)
+    next = i;
+     else {
+     next = first + second;
+    first = second;
+    second = next;
+  }
+ printf("%d ", next);
+}
+
+return 0;
+} </code></pre>
+        </div>
+        <p class="Iferror">If you find any mistake above, kindly email to <a
+                href="mailto:poudel_samundra@outlook.com">poudel_samundra@outlook.com</a></p>
+    </section>
+
+</body>
+
+</html>

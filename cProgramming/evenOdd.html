@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cSytle.css">
+
+</head>
+
+<body>
+    <section class="code">
+        <h2>Program To check Even Odd</h2>
+        <p>
+        <h3>Even Number:</h3>
+        A number is said to be an <b>even number</b> if it is completely divisible by 2.
+        In other words, if a number is divided by 2 and leaves a remainder of 0, then it is said to be an even
+        number.Example: 36, 24
+        </p>
+        <h3>Odd Number:</h3>
+        A number is said to be an <b>odd number</b> if it is not completely divisible by 2.
+        In other words, if a number is divided by 2 and the remainder is 1, it is said to be an odd number. Example: 21,
+        15
+
+
+        </p>
+        <div class="prgDes">
+            <h2>Program Description</h2>
+            <p>Write a C Program to check whether a given number is even or odd.</p>
+        </div>
+
+        <div class="prgSoln">
+            <p>1. Take the integer to be checked as input.</p> <br>
+            <p>2. Find the remainder of the integer by dividing it by 2.</p> <br>
+            <p>3. Use if, else statement to check whether the remainder is equal to zero or not.</p> <br>
+            <p>4. Print the output and exit.</p>
+
+        </div>
+        <div class="sourceCode">
+            <p>Here is source code of the C program to check whether a given integer is even or odd using if-else
+                statement and modulus operator. The C program is successfully compiled and run on a Linux system. The
+                program output is also shown below.</p>/*
+ * C Program to check whether a number is even or odd 
+ * using if-else statement and modulus operator
+ */
+ 
+#include &lt;stdio.h&gt;
+void main() 
+{
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+ 
+    if(n % 2 == 0)
+        printf("%d is even number.", n);
+    else
+        printf("%d is odd number.", n);
+}>
+            <pre><code class="language-c">
+/*
+ * C Program to check whether a number is even or odd 
+ * using if-else statement and modulus operator
+ */
+ 
+#include <stdio.h>
+void main() 
+{
+    int n;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+ 
+    if(n % 2 == 0)
+        printf("%d is even number.", n);
+    else
+        printf("%d is odd number.", n);
+}
+
+                </code></pre>
+        </div>
+        <p class="Iferror">If you find any mistake above, kindly email to poudel_samundra@outlook.com</p>
+    </section>
+</body>
+
+</html>

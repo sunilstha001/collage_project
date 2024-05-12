@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cSytle.css">
+
+</head>
+
+<body>
+    <section class="code">
+        <h2>Bubble Sort in C</h2>
+        <p>
+        <h3>Bubble Sort:</h3>
+        <b>Bubble Sort</b> is a simple sorting algorithm that repeatedly steps through the list, compares adjacent
+        elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is
+        sorted. </p>
+        <div class="prgDes">
+            <h2>Program Description</h2>
+            <p>Write a C Program to sort an array of integers using Bubble Sort.</p>
+        </div>
+        <div class="prgSoln">
+            <p>1. Take the array of integers as input.</p> <br>
+            <p>2. Use two nested loops to compare and swap adjacent elements.</p> <br>
+            <p>3. Print the sorted array and exit.</p>
+
+        </div>
+        <div class="sourceCode">
+            <p>Here is source code of the C program to sort an array of integers using Bubble Sort. The C program is
+                successfully compiled and run on a Linux system. The program output is also shown below.</p>
+            <pre><code class="language-c">
+                /*
+
+C Program to sort an array of integers using Bubble Sort */
+#include &lt;stdio.h&gt;
+
+void bubbleSort(int arr[], int n) {
+ for(int i = 0; i < n-1; i++) { 
+    for(int j = 0; j < n-i-1; j++) { 
+        if(arr[j] > arr[j+1]) {
+             // Swap arr[j] and arr[j+1] 
+             int temp = arr[j]; 
+             arr[j] = arr[j+1]; 
+             arr[j+1] = temp;
+             }
+        }
+    }
+}
+
+int main() { 
+    int arr[] = {64, 34, 25, 12, 22, 11, 90};
+     int n = sizeof(arr)/sizeof(arr[0]);
+
+bubbleSort(arr, n);
+
+printf("Sorted array: \n");
+for(int i = 0; i < n; i++)
+    printf("%d ", arr[i]);
+
+return 0;
+} </code></pre>
+        </div>
+        <p class="Iferror">If you find any mistake above, kindly email to <a
+                href="mailto:poudel_samundra@outlook.com">poudel_samundra@outlook.com</a></p>
+    </section>
+
+</body>
+
+</html>

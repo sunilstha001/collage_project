@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+
+<body>
+    <section class="c">
+        <div class="titles">
+
+            <div id="listOption">
+                <a href="#" id="topOption">C Programs</a>
+                <a href="#" class="otherOptions">C Algorithms</a>
+                <a href="#" class="otherOptions">Data structure in C</a>
+                <a href="#" class="otherOptions">Simple C program</a>
+                <a href="#" class="otherOptions">Array Program</a>
+                <a href="#" class="otherOptions">String Program</a>
+                <a href="#" class="otherOptions">Bitwise Operations</a>
+                <a href="#" class="otherOptions">Recursion Programs</a>
+            </div>
+            <div id="listOption1">
+                <a href="#" id="topOption1">Popular C Program</a>
+                <a href="#" class="otherOptions1">Fibonacci Series</a>
+                <a href="#" class="otherOptions1">Armstrong Number</a>
+                <a href="#" class="otherOptions1">Palindrome Program</a>
+                <a href="#" class="otherOptions1">Leap Year</a>
+            </div>
+            <div id="listOption2">
+                <a href="#" id="topOption2">Sorting Algos in C</a>
+                <a href="#" class="otherOptions2">Bubble Sort</a>
+                <a href="#" class="otherOptions2">Insertion Sort</a>
+                <a href="#" class="otherOptions2">Selection Sort</a>
+                <a href="#" class="otherOptions2">Quick Sort</a>
+            </div>
+
+        </div>
+        <div class="description">
+            <h2 class="heading">C Programming</h2>
+            <img src="/test_my_project/logo.png" alt="CurrHub">
+            <p class="para">C is a general-purpose procedural programming language mainly used for software development
+                such as operating systems, compilers, language interpreters, databases, etc. The main features of C
+                programming are speed and efficiency, modularity, portability, static typing, and extensibility. C
+                programming is the perfect language for beginners to learn programming. This section contains many
+                examples of C programming, from simple programs to intermediate C programs.</p>
+            <br>
+            <p class="para">
+                These C Programming examples are categorized as data types, array, pointers, matrix, bitwise operations,
+                control flow statements, math functions, factorial and Fibonacci series, palindrome, strings, searching,
+                Sorting, etc. Each sample program includes a program description, C code, and program output.
+            </p>
+            <h3 class="subHeading">Here is the listing of C Programming Topics</h3>
+            <div class="content">
+                <ul class="contentTrack">
+                    <li class="contentItems">
+                        <a href="#">Simple C Program</a>
+                    </li>
+                    <li class="contentItems">
+                        <a href="#">C program on Numbers</a>
+                    </li>
+                    <li class="contentItems">
+                        <a href="#">Factorial & Fibonacci Program in c</a>
+                    </li>
+                    <li class="contentItems">
+                        <a href="#">Pattern Program in C</a>
+                    </li>
+                    <li class="contentItems">
+                        <a href="#">Conversion Program in C</a>
+                    </li>
+                    <li class="contentItems">
+                        <a href="#">C program on Maths FUnction</a>
+                    </li>
+                    <li class="contentItems">
+                        <a href="#">C program on Area and volume</a>
+                    </li>
+                    <li class="contentItems">
+                        <a href="#">C program on GDC & LCM</a>
+                    </li>
+                    <li class="contentItems">
+                        <a href="#">C program on array</a>
+                    </li>
+                    <li class="contentItems">
+                        <a href="#">C Program on matrix</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="moreContent">
+                <h2 class="contentHeading">Simple C Programs</h2>
+                <ul class="openContent">
+                    <li class="contentLink"><a href="hello.html">Hello World Program in C</a></li>
+                    <li class="contentLink"><a href="evenOdd.html">C Program to Check Whether a Given Number is Even or
+                            Odd</a></li>
+                    <li class="contentLink"><a href="largestAmong3.html">C program to Find the Largest Number Among Three
+                            Numbers</a></li>
+                    <li class="contentLink"><a href="swapTwoNums.html">C Program to Swap Two Numbers</a></li>
+                    <li class="contentLink"><a href="sumOfdigit.html">C Program to Find Sum of Digits of a Number</a></li>
+                </ul>
+                <h2 class="contentHeading">Factorial & Fibonacci Programs in C</h2>
+                <ul class="openContent">
+                    <li class="contentLink"><a href="fibonacci.html">Fibonacci Series Program in C</a></li>
+                    <li class="contentLink"><a href="nthFibo.html">C Program to Find Nth Fibonacci Number using
+                            Recursion</a></li>
+                    <li class="contentLink"><a href="error.html">C Program to Find the Factorial of a Number</a></li>
+                    <li class="contentLink"><a href="error.html">C Program to Find the Factorial of a Number using
+                            Recursion</a></li>
+                    <li class="contentLink"><a href="pyramid.html">Pyramid Patterns in C</a></li>
+                </ul>
+                <h2 class="contentHeading">Sorting Problems</h2>
+                <ul class="openContent">
+                    <li class="contentLink"><a href="bubbleSort.html">Bubble Sort in C</a></li>
+                    <li class="contentLink"><a href="insertionSort.html">Insertion Sort In C</a></li>
+                    <li class="contentLink"><a href="quickSort.html">Quick Sort In C</a></li>
+                    <li class="contentLink"><a href="selectionSort.html">Selection Sort In C</a></li>
+                </ul>
+                <h2 class="contentHeading" title="Adding soon">Special C Program</h2>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        document.getElementById("topOption").addEventListener("click", function () {
+            var otherOptions = document.querySelectorAll('.otherOptions');
+            otherOptions.forEach(function (option) {
+                option.classList.toggle('collapsed');
+            });
+        });
+    </script>
+    <script>
+        document.getElementById("topOption1").addEventListener("click", function () {
+            var otherOptions = document.querySelectorAll('.otherOptions1');
+            otherOptions.forEach(function (option) {
+                option.classList.toggle('collapsed1');
+            });
+        });
+    </script>
+    <script>
+        document.getElementById("topOption2").addEventListener("click", function () {
+            var otherOptions = document.querySelectorAll('.otherOptions2');
+            otherOptions.forEach(function (option) {
+                option.classList.toggle('collapsed2');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.c {
+    display: flex;
+    padding: 0 18vh;
+    gap: 1em;
+}
+
+.titles {
+    width: fit-content;
+}
+
+.heading,
+.subHeading {
+    /* width: 100%; */
+    text-align: center;
+    padding: 1em 0;
+}
+
+img {
+    float: left;
+    margin: 0 1em 1em 0;
+
+}
+
+#listOption,
+#listOption1,
+#listOption2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 20vh;
+}
+#topOption,
+#topOption1,
+#topOption2{
+    font-weight: bold;
+}
+
+.titles a {
+    padding: 1em 0 1em 1em;
+    background-color: #f7f7f7;
+    border-bottom: 1px dashed goldenrod;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+
+#listOption .otherOptions.collapsed {
+    display: none;
+}
+
+#listOption a:hover,
+#listOption1 a:hover,
+#listOption2 a:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+#listOption1 .otherOptions1.collapsed1 {
+    display: none;
+}
+
+#listOption2 .otherOptions2.collapsed2 {
+    display: none;
+}
+.content{
+    display: grid;
+    place-items: center;
+}
+
+.content ul{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1em;
+    grid-template-rows: auto;
+    column-gap: 4em;
+    list-style-type: none;
+}
+li a{
+    color: blue;
+    text-decoration: none;
+    /* padding: 3%; */
+}
+li a:hover{
+    /* text-decoration: underline; */
+    background-color: bisque;
+    cursor: pointer;
+   
+}
+h2[title]:hover::after {
+    content: attr(title);   
+    display: block;         
+    background-color: #f9f9f9; 
+    color: #333;           
+    padding: 5px;          
+    border: 1px solid #ccc; 
+    /* position: absolute;     */
+    top: 100%;             
+    left: 0;                
+    z-index: 1;            
+    white-space: nowrap;   
+}
+.moreContent{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.moreContent ul{
+   list-style-type: none;
+   padding-top: 1em;
+   padding-bottom: 1em;
+}
+@media (width>=600px){
+    .moreContent ul{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1em;
+        grid-template-rows: auto;
+        column-gap: 4em;
+        list-style-type: none;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        /* margin-left: 5em */
+    }
+    h2{
+        text-align: center;
+    }
+ 
+}

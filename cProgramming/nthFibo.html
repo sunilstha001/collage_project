@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cSytle.css">
+
+</head>
+
+<body>
+    <section class="code">
+        <h2>C Program to Find Nth Fibonacci Number using Recursion</h2>
+        <p>
+        <h3>Nth Fibonacci Number:</h3> The <b>Nth Fibonacci number</b> is the Nth number in the Fibonacci series. For
+        example, the 10th Fibonacci number is 34. </p>
+        <div class="prgDes">
+            <h2>Program Description</h2>
+            <p>Write a C Program to find the Nth Fibonacci number using recursion.</p>
+        </div>
+        <div class="prgSoln">
+            <p>1. Take the number of terms as input.</p> <br>
+            <p>2. Use a recursive function to find the Nth Fibonacci number.</p> <br>
+            <p>3. Print the output and exit.</p>
+
+        </div>
+        <div class="sourceCode">
+            <p>Here is source code of the C program to find the Nth Fibonacci number using recursion. The C program is
+                successfully compiled and run on a Linux system. The program output is also shown below.</p>
+            <pre><code class="language-c">
+                /*
+
+                C Program to find the Nth Fibonacci number using recursion */
+                #include &lt;stdio.h&gt;
+                
+                int fibonacci(int n) { if (n <= 1) return n; else return fibonacci(n - 1) + fibonacci(n - 2); }
+                
+                int main() { int n; printf("Enter the number of terms: "); scanf("%d", &n);
+                
+                printf("The %dth Fibonacci number is: %d", n, fibonacci(n));
+
+            return 0;   
+        } </code></pre>
+        </div>
+        <p class="Iferror">If you find any mistake above, kindly email to <a
+                href="mailto:poudel_samundra@outlook.com">poudel_samundra@outlook.com</a></p>
+    </section>
+
+</body>
+
+</html>

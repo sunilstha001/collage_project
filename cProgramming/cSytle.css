@@ -1,0 +1,62 @@
+pre {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 1em 0;
+}
+
+.Iferror {
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 1em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+.prgDes,
+.prgSoln {
+    padding: 1em;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+.prgDes {
+    margin-bottom: 1em;
+}
+
+.sourceCode {
+    margin-top: 1em;
+}
+.code{
+    padding: 0 18vh;
+
+}
+@media (width<600px){
+    .code{
+        padding: 0 2vh 2vh;
+
+    }
+}
+@media(width>601px) and (width<1200){
+    .code{
+        padding: 0 5vh;
+
+    }
+}

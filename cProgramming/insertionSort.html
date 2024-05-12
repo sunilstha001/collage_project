@@ -1,0 +1,74 @@
+<!DOCTYPE html> <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cSytle.css">
+
+</head>
+
+<body>
+    <section class="code">
+        <h2>Insertion Sort in C</h2>
+        <p>
+        <h3>Insertion Sort:</h3>
+        <b>Insertion Sort</b> is a simple sorting algorithm that builds the final sorted array (or list) one item at a
+        time. It is much less efficient on large lists than more advanced algorithms such as <a
+            href="https://www.geeksforgeeks.org/bubble-sort/">Bubble Sort</a>, <a
+            href="https://www.geeksforgeeks.org/selection-sort/">Selection Sort</a>, or <a
+            href="https://www.geeksforgeeks.org/merge-sort/">Merge Sort</a>. </p>
+        <div class="prgDes">
+            <h2>Program Description</h2>
+            <p>Write a C Program to sort an array of integers using Insertion Sort.</p>
+        </div>
+        <div class="prgSoln">
+            <p>1. Take the array of integers as input.</p> <br>
+            <p>2. Initialize a variable to keep track of the current element.</p> <br>
+            <p>3. Use a for loop to iterate through the array, starting from the second element.</p> <br>
+            <p>4. Use another for loop to compare the current element with the previous elements.</p> <br>
+            <p>5. If the current element is smaller than the previous element, swap them.</p> <br>
+            <p>6. Print the sorted array and exit.</p>
+
+        </div>
+        <div class="sourceCode">
+            <p>Here is source code of the C program to sort an array of integers using Insertion Sort. The C program is
+                successfully compiled and run on a Linux system. The program output is also shown below.</p>
+            <pre><code class="language-c">
+                /*
+
+C Program to sort an array of integers using Insertion Sort */
+#include &lt;stdio.h&gt;
+
+void insertionSort(int arr[], int n) { 
+    int i, key, j; 
+    for (i = 1; i < n; i++) { 
+        key = arr[i]; j = i - 1;
+    /* Move elements of arr[0..i-1], that are
+    greater than key, to one position ahead
+    of their current position */
+    while (j >= 0 && arr[j] &gt; key) {
+        arr[j + 1] = arr[j];
+        j = j - 1;
+    }
+    arr[j + 1] = key;
+}
+int main() { int arr[] = {12, 11, 13, 5, 6}; 
+int n = sizeof(arr)/sizeof(arr[0]);
+
+insertionSort(arr, n);
+
+printf("Sorted array: \n");
+for(int i = 0; i < n; i++)
+    printf("%d ", arr[i]);
+
+return 0;
+} </code></pre>
+        </div>
+        <p class="Iferror">If you find any mistake above, kindly email to <a
+                href="mailto:poudel_samundra@outlook.com">poudel_samundra@outlook.com</a></p>
+    </section>
+
+</body>
+
+</html>

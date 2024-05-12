@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="cSytle.css">
+</head>
+
+<body>
+    <section class="code">
+        <h2>Selection Sort in C</h2>
+        <p>
+        <h3>Selection Sort:</h3>
+        <b>Selection Sort</b> is a simple sorting algorithm that works by repeatedly finding the minimum element from
+        unsorted part and putting it at the sorted part. </p>
+        <div class="prgDes">
+            <h2>Program Description</h2>
+            <p>Write a C Program to sort an array of integers using Selection Sort.</p>
+        </div>
+        <div class="prgSoln">
+            <p>1. Take the array of integers as input.</p> <br>
+            <p>2. Initialize a variable to keep track of the minimum element.</p> <br>
+            <p>3. Use two nested for loops to iterate through the array.</p> <br>
+            <p>4. In the inner loop, find the minimum element and its index.</p> <br>
+            <p>5. Swap the minimum element with the first element of the unsorted part.</p> <br>
+            <p>6. Print the sorted array and exit.</p>
+
+        </div>
+        <div class="sourceCode">
+            <p>Here is source code of the C program to sort an array of integers using Selection Sort. The C program is
+                successfully compiled and run on a Linux system. The program output is also shown below.</p>
+            <pre><code class="language-c">
+                /*
+
+C Program to sort an array of integers using Selection Sort */
+#include &lt;stdio.h&gt;
+
+void selectionSort(int arr[], int n) { 
+int i, j, minIndex, temp;
+ for (i = 0; i < n-1; i++) { 
+minIndex = i; for (j = i+1; j < n; j++) { 
+    if (arr[j] < arr[minIndex]) { 
+        minIndex = j; 
+    }
+ }
+// Swap the found minimum element with the first element
+temp = arr[minIndex];
+arr[minIndex] = arr[i];
+arr[i] = temp;
+}
+
+int main() { int arr[] = {64, 34, 25, 12, 22, 11, 90}; 
+int n = sizeof(arr)/sizeof(arr[0]);
+
+selectionSort(arr, n);
+
+printf("Sorted array: \n");
+for(int i = 0; i < n; i++)
+    printf("%d ", arr[i]);
+
+return 0;
+} </code></pre>
+        </div>
+        <p class="Iferror">If you find any mistake above, kindly email to <a
+                href="mailto:poudel_samundra@outlook.com">poudel_samundra@outlook.com</a></p>
+    </section>
+
+</body>
+
+</html>

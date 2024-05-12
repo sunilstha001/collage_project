@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cSytle.css">
+
+</head>
+
+<body>
+    <section class="code">
+        <h2>C Program to Swap Two Numbers</h2>
+        <p>
+           
+        <h3>Swapping two numbers</h3> In C programming means swapping the values of two variables. For example, there are two variables m & n. Value of m is “2” & value of n is “3”.
+        
+        After Swapping: m value = 3; n value = 2
+        </p>
+        <p>
+            Before Swapping: m value = 2; n value = 3
+        </p>
+        <p>After Swapping: m value = 3; n value = 2</p>
+        <div class="prgDes">
+            <h2>Program Description</h2>
+            <p>Write a C program that swaps the values of two variables based on user input.</p>
+        </div>
+
+        <div class="prgSoln">
+            <p>1. Take the three numbers as input and store them in variables.</p> <br>
+            <p>2. Check the first number if it is greater than other two.</p> <br>
+            <p>3. Repeat the step 2 for other two numbers.</p> <br>
+            <p>4. Print the number which is greater among all and exit.</p>
+
+        </div>
+        <div class="sourceCode">
+            <h2>Program/Source Code</h2>
+            <p>Here is source code of the C program to calculate the largest of 3 numbers. The C program is successfully
+                compiled and run on a Linux system. The program output is also shown below.</p>
+            <pre><code class="language-c">
+/*
+* C program to find the largest  of three numbers
+*/
+
+#include &lt;stdio.h&gt;
+ 
+int main()
+{
+    int a, b, c;
+    printf("Enter three numbers: \na: ");
+    scanf("%d", &a);
+    printf("b: ");
+    scanf("%d", &b);
+    printf("c: ");
+    scanf("%d", &c);
+    if (a > b && a > c)
+        printf("Biggest number is %d", a);
+    if (b > a && b > c)
+        printf("Biggest number is %d", b);
+    if (c > a && c > b)
+        printf("Biggest number is %d", c);
+    return 0;
+}
+
+                </code></pre>
+        </div>
+        <p class="Iferror">If you find any mistake above, kindly email to poudel_samundra@outlook.com</p>
+    </section>
+</body>
+
+</html>

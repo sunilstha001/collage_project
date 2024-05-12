@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cSytle.css">
+
+</head>
+
+<body>
+    <section class="code">
+        <h2>Pyramid Patterns in C</h2>
+        <p>
+        <h3>Pyramid Patterns:</h3> A <b>pyramid pattern</b> is a pattern of numbers or characters that form a pyramid
+        shape. For example, a pyramid pattern of numbers can be created by printing numbers in a triangular shape. </p>
+        <div class="prgDes">
+            <h2>Program Description</h2>
+            <p>Write a C Program to print pyramid patterns of numbers.</p>
+        </div>
+        <div class="prgSoln">
+            <p>1. Take the number of rows as input.</p> <br>
+            <p>2. Use nested loops to print the pyramid pattern.</p> <br>
+            <p>3. Print the output and exit.</p>
+
+        </div>
+        <div class="sourceCode">
+            <p>Here is source code of the C program to print pyramid patterns of numbers. The C program is successfully
+                compiled and run on a Linux system. The program output is also shown below.</p>
+            <pre><code class="language-c">
+                /*
+
+C Program to print pyramid patterns of numbers */
+#include &lt;stdio.h&gt;
+
+int main() { 
+int rows, i, j, k;
+ printf("Enter the number of rows: ");
+scanf("%d", &rows);
+for (i = 1; i <= rows; i++) {
+    for (j = 1; j <= i; j++) {
+        printf("%d ", j);
+    }
+    printf("\n");
+}
+
+return 0;
+} </code></pre>
+        </div>
+        <p class="Iferror">If you find any mistake above, kindly email to <a
+                href="mailto:poudel_samundra@outlook.com">poudel_samundra@outlook.com</a></p>
+    </section>
+
+</body>
+
+</html>

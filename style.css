@@ -32,10 +32,18 @@ body {
     cursor: pointer;
 
 }
-
+.left-copy{
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    padding: 5vw;
+    font-weight: 600;
+    gap: 15px;
+}
 .second-nav .left img {
     height: 70px;
     display: none;
+
 }
 
 .main .header .second-nav .right #menue {
@@ -264,7 +272,11 @@ body {
         display: flex;
         justify-content: center;
     }
-
+    .left-copy{
+        display: none;
+        flex-direction: column;
+        padding: 5vw;
+    }
     .main .header .second-nav .right #menue {
         display: inline-block;
         cursor: pointer;
